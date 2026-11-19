@@ -207,3 +207,17 @@ body.forum-site .opening-speaker .opening-mode{margin-top:5px;color:#475b67;font
 @media(max-width:800px){body.forum-site #opening-remarks{scroll-margin-top:280px}}
 
 @media(max-width:800px){body.forum-site .opening-portrait{flex-basis:80px;width:80px;height:96px}}
+
+/* Concise, linked advisory-board profiles. */
+body.forum-site .board-grid{gap:48px;margin-top:28px}
+body.forum-site .board-grid>section{min-width:0}
+body.forum-site .board-grid h2{scroll-margin-top:130px}
+body.forum-site .advisory-list li{padding:18px 0}
+body.forum-site .advisory-list h3{font-size:1.125rem;line-height:1.4;margin:0 0 7px}
+body.forum-site .board-profile{color:var(--forum-navy);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+body.forum-site .board-profile:hover,body.forum-site .board-profile:focus-visible{color:var(--forum-teal)}
+body.forum-site .advisory-list p{font-size:.9375rem;line-height:1.5;margin:0}
+body.forum-site .advisory-list .board-position{font-weight:550;color:var(--forum-ink);margin-bottom:5px}
+body.forum-site .board-affiliation,body.forum-site .board-country{color:var(--forum-muted)}
+body.forum-site .advisory-list .board-country{margin-top:3px}
+@media(max-width:800px){body.forum-site .board-grid{gap:30px;margin-top:24px}body.forum-site .advisory-list li{padding:16px 0}body.forum-site .board-grid h2{scroll-margin-top:280px}}
