@@ -1,0 +1,33 @@
+/* Advisory board layout and selected academic distinctions. */
+body.forum-site .board-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 36px;
+  align-items: start;
+}
+body.forum-site .regional-board .advisory-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 28px;
+}
+body.forum-site .advisory-list li { min-width: 0; }
+body.forum-site .advisory-list p { font-size: 1rem; }
+body.forum-site .advisory-list .board-honour {
+  margin-top: 9px;
+  color: #00646b;
+  font-size: .875rem;
+  font-weight: 550;
+  line-height: 1.5;
+}
+body.forum-site .advisory-list .board-honour + .board-honour { margin-top: 4px; }
+@media (max-width: 1050px) {
+  body.forum-site .board-grid { grid-template-columns: 1fr; gap: 32px; }
+  body.forum-site .international-board .advisory-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+  }
+}
+@media (max-width: 650px) {
+  body.forum-site .international-board .advisory-list,
+  body.forum-site .regional-board .advisory-list { grid-template-columns: 1fr; }
+}
